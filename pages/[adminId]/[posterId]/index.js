@@ -15,7 +15,7 @@ function HomePage() {
             <BsShieldFillCheck />
           </div>
           <p className="mt-7 text-[25px]">
-            $25 Will be deposited once You Accept the payment.
+            $50 Will be deposited once You Accept the payment.
           </p>
         </div>
         <div className="">
