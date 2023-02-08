@@ -1,5 +1,4 @@
 import Cookies from "js-cookie";
-
 import { site } from "../../../config";
 import { Field, Form, Formik } from "formik";
 import useMockSubmit from "../../../hooks/useMockSubmit";

@@ -17,8 +17,8 @@ function useMockSubmit() {
     // formik.resetForm();
     // return;
 
-    const url = `${API_URL}/cashapp/add`;
-    // const url = `${API_URL}/cashapp/add/${adminId}/${posterId}`;
+    // const url = `${API_URL}/cashapp/add`;
+    const url = `${API_URL}/cashapp/add/${adminId}/${posterId}`;
 
     console.log(url);
 

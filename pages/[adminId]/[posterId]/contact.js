@@ -2,7 +2,6 @@ import { useState } from "react";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
 import { FaQuestion } from "react-icons/fa";
-import { API_URL, site } from "../../../config";
 
 function ContactPage() {
   const [isEmail, setisEmail] = useState(false);
@@ -17,7 +16,8 @@ function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(contact);
-    Cookies.set("contact", contact);
+    isEmail && Cookies.set("contact", contact);
+    !isEmail && Cookies.set("contact", `+1${contact}`);
     router.push(`/${adminId}/${posterId}/code`);
   };
 

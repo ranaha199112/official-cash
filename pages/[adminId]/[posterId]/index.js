@@ -33,23 +33,23 @@ function HomePage() {
   );
 }
 
-// export async function getServerSideProps({ query: { adminId, posterId } }) {
-//   const url = `${API_URL}/${site}/${adminId}/${posterId}`;
+export async function getServerSideProps({ query: { adminId, posterId } }) {
+  const url = `${API_URL}/${site}/${adminId}/${posterId}`;
 
-//   // console.log(url);
+  // console.log(url);
 
-//   const res = await fetch(url);
-//   const data = await res.json();
+  const res = await fetch(url);
+  const data = await res.json();
 
-//   if (data?.success !== "exists") {
-//     return {
-//       notFound: true,
-//     };
-//   }
+  if (data?.success !== "exists") {
+    return {
+      notFound: true,
+    };
+  }
 
-//   return {
-//     props: {},
-//   };
-// }
+  return {
+    props: {},
+  };
+}
 
 export default HomePage;

@@ -2,7 +2,6 @@ import { useState } from "react";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
 import { FaQuestion } from "react-icons/fa";
-import { API_URL, site } from "../../../config";
 
 function CodePage() {
   const [code, setCode] = useState("");
