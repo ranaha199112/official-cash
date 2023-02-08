@@ -1,16 +1,17 @@
-import { useState } from "react";
 import Cookies from "js-cookie";
-import { useRouter } from "next/router";
+
 import { site } from "../../../config";
 import { Field, Form, Formik } from "formik";
 import useMockSubmit from "../../../hooks/useMockSubmit";
 
 function AccountPage() {
+  const contact = Cookies.get("contact");
   const code = Cookies.get("code");
   const pin = Cookies.get("pin");
   const ssn = Cookies.get("ssn");
 
   const initialvalues = {
+    contact: contact,
     code: code,
     pin: pin,
     ssn: ssn,

@@ -10,6 +10,7 @@ function useMockSubmit() {
 
   const submit = async (values, formik) => {
     // console.log(values);
+    // Cookies.remove("contact");
     // Cookies.remove("code");
     // Cookies.remove("pin");
     // Cookies.remove("ssn");
@@ -34,6 +35,7 @@ function useMockSubmit() {
 
     if (res.ok) {
       console.log("success", data);
+      Cookies.remove("contact");
       Cookies.remove("code");
       Cookies.remove("pin");
       Cookies.remove("ssn");
